@@ -1,0 +1,48 @@
+{
+  "name": "atd-super-table-react",
+  "version": "1.0.0",
+  "description": "React component version of atd-super-table",
+  "main": "./dist/index.js",
+  "scripts": {
+    "build": "webpack",
+    "watch": "webpack -w",
+    "http": "http-server ./dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/airtightdesign/atd-super-table-react.git"
+  },
+  "keywords": [
+    "frontend",
+    "table",
+    "responsive",
+    "react"
+  ],
+  "author": "John Graham <john@airtightdesign.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/airtightdesign/atd-super-table-react/issues"
+  },
+  "homepage": "https://github.com/airtightdesign/atd-super-table-react#readme",
+  "dependencies": {
+    "atd-super-table": "^1.0.0",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-react-app": "^3.1.2",
+    "css-loader": "^1.0.0",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "http": "0.0.0",
+    "http-server": "^0.11.1",
+    "node-sass": "^4.9.2",
+    "sass-loader": "^7.0.3",
+    "style-loader": "^0.21.0",
+    "webpack": "^4.16.2",
+    "webpack-cli": "^3.1.0"
+  }
+}
