@@ -20,7 +20,7 @@ export default class AtdSuperTable extends React.Component {
 
     render() {
         return (
-            <div id="super-table" className="super-table" data-super-table data-lockable>
+            <div id="super-table" className="super-table" data-super-table data-lockable onClick={this.props.onClick}>
                 <div className="responsive">
                     {this.props.children}
                 </div>

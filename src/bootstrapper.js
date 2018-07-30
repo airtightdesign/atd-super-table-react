@@ -3,8 +3,16 @@ import ReactDOM from 'react-dom';
 
 import AtdSuperTable from './index.js';
 
+function onClick(e) {
+    console.log(e);
+    if(e.target.dataset.title) {
+        e.preventDefault();
+        console.log(e.target.dataset.title);
+    }
+}
+
 ReactDOM.render(
-    <AtdSuperTable>
+    <AtdSuperTable onClick={onClick}>
         <table class="table">
             <thead>
             <tr>
@@ -35,7 +43,7 @@ ReactDOM.render(
                 <td>$419</td>
                 <td>213</td>     
                 <td>
-                <a href="#" class="btn btn-inline btn-sm btn-primary">Select VINs</a>
+                <a href="#" data-title="2014 Kia Sorento" class="btn btn-inline btn-sm btn-primary">Select VINs</a>
                 </td>
             </tr>
 
@@ -51,7 +59,7 @@ ReactDOM.render(
                 <td>$633</td>
                 <td>440</td>
                 <td>
-                <a href="#" class="btn btn-inline btn-sm btn-primary">Select VINs</a>
+                <a href="#" data-title="2015 Kia Forte" class="btn btn-inline btn-sm btn-primary">Select VINs</a>
                 </td>
             </tr>
 
@@ -67,7 +75,7 @@ ReactDOM.render(
                 <td>$377</td>
                 <td>389</td>
                 <td>
-                <a href="#" class="btn btn-inline btn-sm btn-primary">Select VINs</a>
+                <a href="#" data-title="2013 Hyundai Accent" class="btn btn-inline btn-sm btn-primary">Select VINs</a>
                 </td>
             </tr>
 
@@ -83,7 +91,7 @@ ReactDOM.render(
                 <td>$523</td>
                 <td>389</td>
                 <td>
-                <a href="#" class="btn btn-inline btn-sm btn-primary">Select VINs</a>
+                <a href="#" data-title="2014 Hyundai Sonata" class="btn btn-inline btn-sm btn-primary">Select VINs</a>
                 </td>
             </tr>
             </tbody>
